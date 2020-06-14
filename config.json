@@ -1,0 +1,39 @@
+{
+    "gpu":"0",
+    "seed": 1000,
+    "exp_info":
+    {
+        "method": "ct_both",
+        "task": "test",
+        "exp_name": "pet",
+        "save_dir": "experiments/tumor_data/fractions/frac_0",
+        "ckpt_file": "None",
+        "fold": 0,
+        "n_folds": 1,
+        "start_epoch": 0
+    },
+
+    "data_info":
+    {
+        "meta_data": "/home/karthikp/MST/tumor_data/meta_data.pkl",
+        "index_data": "/home/karthikp/MST/tumor_data/index_data.pkl",
+        "data_file": "/home/karthikp/MST/tumor_data/data_file.h5",
+        "data_aug": "/home/karthikp/MST/tumor_data/data_aug.h5"
+    },
+
+    "hyper_params":
+    {
+        "n_epochs": 75,
+        "lr": 0.0001,
+        "batch_size": 2,
+        "alpha_dice": 1,
+        "alpha": 10,
+        "beta": 100,
+        "gamma": 1e4,
+        "weight_decay": 1e-5,
+        "n_train_valid": 320,
+        "frac_pet": 1.0,
+        "data_aug": 0.25,
+        "include_pet_prob": 0.5
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "root": "/data",
+  "_root": "/",
+  "_comment": "/",
+  "data_path": "/data",
+  "tags_consider": ["tumor-tag", "node-tag", "mets-tag", "all", "overlap"],
+  "detect": false,
+  "train": false,
+  "valid": true,
+  "test": false,
+  "plot_curves": false
+}
