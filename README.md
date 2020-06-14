@@ -1,14 +1,28 @@
 # PET Guided Attention Network for segmentation of lung tumors from PET/CT images that accounts for missing PET images  
 
-This project is my part of my master thesis at ETH Zurich, Switzerland. 
+This project is my part of my Master Thesis at ETH Zurich, Switzerland.   
 
--- Project Status : [Completed]
+Please find the complete report at ([https://www.research-collection.ethz.ch/handle/20.500.11850/420233])
+
+The work is also submitted to ICML 2020 workshop (ML for Global Health) 
+([https://mlforglobalhealth.org/])  
 
 ## Introduction 
- 
-PET Guided Attention Network is a novel deep learning model for segmentation of lung tumors from PET/CT images that  
-can account for missing PET images. It is based on a novel PET Guided Attention Gate (PAG). 
 
+PET/CT imaging is the gold standard for the diagnosis of lung cancer. However, in resource-constrained environments, 
+costly PET images are not readily available for corresponding CT images. Conventional machine learning models 
+either process CT or PET/CT images but not both at the same time. These models are hence restricted by the number of 
+PET images, such that they are unable to make the best use of incomplete PET/CT data. 
+In this work, we apply the concept of visual soft attention to the problem of incomplete PET/CT 
+data to efficiently learn a model for lung cancer segmentation from only a small fraction of PET/CT images and a 
+larger pool of CT-only images. We show that our model performs on par with the respective baselines whether 
+or not PET images are available at test time. We then demonstrate that the model
+learns efficiently from only a few PET/CT scans in a setting where mostly CT-only data is available, unlike 
+conventional models.
+ 
+We achieve this robustness of the model by allowing PET images to act as an optional guide in addition to the 
+gating/query signal (which is usually the encoded feature representation) of a simple attention gate.   
+ 
 The following Figures show the architecture of the network and the attention gate respectively.   
 
 <img src = "architectures/Architecture.png" width=80% align="center" />   
