@@ -4,6 +4,8 @@ This project is my part of my Master Thesis at ETH Zurich, Switzerland.
 
 Please find the complete report at ([https://www.research-collection.ethz.ch/handle/20.500.11850/420233])
 
+Google drive link: ([https://drive.google.com/file/d/1awRe_gL6iOK4whCaFOcev_1HSrC1cF76/view?usp=sharing])
+
 The work is also submitted to ICML 2020 workshop (ML for Global Health) 
 ([https://mlforglobalhealth.org/])  
 
