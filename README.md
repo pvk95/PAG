@@ -2,26 +2,20 @@
 
 This project is my part of my Master Thesis at ETH Zurich, Switzerland.   
 
-Please find the complete report at ([https://www.research-collection.ethz.ch/handle/20.500.11850/420233])
+Please find the complete report here <br> 
+[Master Thesis report](https://www.research-collection.ethz.ch/handle/20.500.11850/420233)
 
-Google drive link: ([https://drive.google.com/file/d/1awRe_gL6iOK4whCaFOcev_1HSrC1cF76/view?usp=sharing])
+The work was accepted in “ICML 2020 Global Health workshop” for a poster presentation. <br>
+[Extended abstract](https://drive.google.com/file/d/1bTJY9fJMBqtC-rLuSchMnS_YJpp6R4z0/view?usp=sharing) <br>
+[Poster](https://drive.google.com/file/d/12JntvvJvbdceLziLWGEewBd6FhJ_-DYJ/view?usp=sharing) <br>
 
-The work is also submitted to ICML 2020 workshop (ML for Global Health) 
-([https://mlforglobalhealth.org/])  
+The work was also accepted at DAGM-GCPR conference <br>
+
 
 ## Introduction 
 
-PET/CT imaging is the gold standard for the diagnosis of lung cancer. However, in resource-constrained environments, 
-costly PET images are not readily available for corresponding CT images. Conventional machine learning models 
-either process CT or PET/CT images but not both at the same time. These models are hence restricted by the number of 
-PET images, such that they are unable to make the best use of incomplete PET/CT data. 
-In this work, we apply the concept of visual soft attention to the problem of incomplete PET/CT 
-data to efficiently learn a model for lung cancer segmentation from only a small fraction of PET/CT images and a 
-larger pool of CT-only images. We show that our model performs on par with the respective baselines whether 
-or not PET images are available at test time. We then demonstrate that the model
-learns efficiently from only a few PET/CT scans in a setting where mostly CT-only data is available, unlike 
-conventional models.
- 
+PET/CT imaging is the gold standard for the diagnosis and staging of lung cancer. However, especially in healthcare systems with limited resources, costly PET/CT images are often not readily available. Conventional machine learning models either process CT or PET/CT images but not both. Models designed for PET/CT images are hence restricted by the number of PET images, such that they are unable to additionally leverage CT-only data. In this work, we apply the concept of visual soft attention to efficiently learn a model for lung cancer segmentation from only a small fraction of PET/CT scans and a larger pool of CT-only scans. We show that our model is capable of jointly processing PET/CT as well as CT-only images, which performs on par with the respective baselines whether or not PET images are available at test time. We then demonstrate that the model learns efficiently from only a few PET/CT scans in a setting where mostly CT-only data is available, unlike conventional models. 
+
 We achieve this robustness of the model by allowing PET images to act as an optional guide in addition to the 
 gating/query signal (which is usually the encoded feature representation) of a simple attention gate.   
  
